@@ -37,7 +37,8 @@ class PostList extends Component
         return Post::published()
                     ->orderBy('published_at', $this->sort)
                     ->where('title', 'like', "%{$this->search}%")
-                    ->simplePaginate(10)
+                    ->paginate(10)
+                    // ->simplePaginate(10)
         ;
     }
 

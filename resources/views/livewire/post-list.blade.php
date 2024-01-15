@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center border-b border-gray-100">
         <div>
             @if ($search)
-                Searching {{$search}}
+                Searching <strong>"{{$search}}"</strong>
             @endif
         </div>
         <div class="flex items-center space-x-4 font-light ">
@@ -21,3 +21,4 @@
     </div>
 </div>
 
+ 
